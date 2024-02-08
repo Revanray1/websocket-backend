@@ -15,7 +15,7 @@ const io = new Server(server, {
 io.on("connection", (socket) => {
   console.log("A user connected", socket.id);
   socket.emit("message", [
-    { name: "Demo", text: "say HEllo", image:"https://i.imgur.com/HYcn9xO.png"}
+    { name: "Dory", text: "Heyy iam dory Bot,Say Hello and continue to chat", image:"https://i.imgur.com/HYcn9xO.png"}
   ]);
 
   socket.on("message", (data) => {
